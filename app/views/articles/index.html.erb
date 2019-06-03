@@ -1,0 +1,16 @@
+
+<div class="navbar navbar-light bg-light">
+<h4>Wikinimous!</h4>
+<%= link_to "New article", new_article_path, class: "btn btn-outline-secondary" %>
+</div>
+<div class="container">
+  <% @articles.each do |article| %>
+  <h3><%= link_to article.title, article_path(article), class: "text-uppercase font-weight-bold" %></h3>
+  <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, commodi?</p>
+  <% end %>
+  <br>
+  <br>
+  <br>
+
+
+</div>

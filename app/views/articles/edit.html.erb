@@ -1,0 +1,8 @@
+<div class="navbar navbar-light bg-light">
+<h4>Wikinimous!</h4>
+<%= link_to "New article", new_article_path, class: "btn btn-outline-secondary" %>
+</div>
+<div class="container">
+  <h1>Edit article</h1>
+  <%= render 'form', article: @article %>
+</div>
